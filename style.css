@@ -50,14 +50,34 @@ main{
     border-bottom: 2px solid black;
 }
 .zoekVeld > input{
-
+    background-color: rgb(150, 192, 227);
     height: 30px;
     width: 15%;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;;
+}
+.zoekVeld > input:focus{
+    background-color: aliceblue;
+    color:black;
 }
 .zoekVeld > label {
     font-size: 20px;
     font-weight: 800;
     margin-right: 8px;
+}
+.zoekVeld > button {
+    margin-left: 1%;
+    padding: 4px;
+    width: 3%;
+    background-color: rgb(150, 192, 227);
+    font-weight: 600;
+    border-radius: 5px;
+}
+.zoekVeld > button:hover{
+    background-color: aliceblue;
+    color:black;
 }
 .mainInMain {
     background-color: brown;
@@ -80,4 +100,4 @@ main{
     background-color: rgb(59, 89, 153);
     height: 100%;
     width: 100%; 
-}
+} 
