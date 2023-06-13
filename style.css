@@ -13,6 +13,8 @@ main{
     min-width: 400px;
     max-width: 600px;
     margin: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 main > input {
     text-align: center;
@@ -26,16 +28,18 @@ main > button{
     border: 0px;
 }
 .boven{
-    background-color: aquamarine;
+    color: white;
+    font-size: 30px;
     height: 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .onder{
-    background-color: antiquewhite;
+    color: white;
     height: 250px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
