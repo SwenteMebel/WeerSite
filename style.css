@@ -2,118 +2,40 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}   
-header{
-    text-align: center;
-    background-color: antiquewhite;
-}
+    background-image: url(img/weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
 main{
     display: grid;
-    grid-template-columns: 10% 80% 10%;
-    margin: 5%;
-    border-radius: 8px;
-    column-gap: 1%;
+    grid-template-rows: auto auto;   
+    min-width: 400px;
+    max-width: 600px;
+    margin: 2%;
 }
-.links{
-    background-color: aqua;
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 2px solid black;
-}
-.midden{
-    background-color: bisque;
-    width: 100%;
-    height: 1000px;
-    border-radius: 8px;
-    border: 2px solid black;
-}
-.rechts{
-    background-color: blueviolet;
-    width: 100%;
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    border: 2px solid black;
-}
-.midden > .zoekVeld {
-    height: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid black;
-}
-.zoekVeld > input{
-    height: 30px;
-    width: 15%;
-    border-radius: 5px;
-    color: white;
-    font-weight: 600;
-    border-radius: 5px 0px 0px 5px;
-}
-.zoekVeld > input:focus{
-    background-color: aliceblue;
-    color:black;
-}
-
-.zoekVeld > button {
-    margin-left: -3px;
-    height: 30px;
-    padding: 4px;
-    width: 5rem;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    font-weight: 600;
-    border-radius: 0px 5px 5px 0px;
-}
-.zoekVeld button:hover{
-    background-color: rgb(255, 255, 255);
-    color:black;
-}
-.mainInMain {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 38% 20% 38%;
-    justify-content: space-around;
-}
-.verwachting{
-    background-color: antiquewhite;
-    min-height: 500px;
-    width: 100%;
-    margin-top: 5px;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-.dataInvoer{
-    background-color: rgb(220, 178, 123);
-    min-height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-.mapWeer{
-    background-color: rgb(59, 89, 153);
-    min-height: 500px;
-    width: 100%; 
-    margin-top: 5px;
-    border: 2px solid black;
-    border-radius: 8px;
-} 
-.dataInvoer > p {
-    font-weight: 800;
-    font-size: 18px;
-}
-.dataInvoer > h3 {
+main > input {
     text-align: center;
-    color: red;
+    border: 0px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;  
+}
+main > button{
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+.boven{
+    background-color: aquamarine;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.onder{
+    background-color: antiquewhite;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
