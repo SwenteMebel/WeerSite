@@ -26,16 +26,17 @@
                 let plaats = '<h4>Plaats</h4>' + weerHuidig.name + ' (' + weerHuidig.sys.country + ') <br>';
                 let graden = '<p>' + weerHuidig.main.temp + '<br>';
                 let omschrijving = '<h4>Omschrijving</h4> ' + weerHuidig.weather[0].description;
-                let windsnelheid = '<h4>Windsnelheid</h4> ' +weerHuidig.wind.speed;
+                //let windsnelheid = '<h4>Windsnelheid</h4> ' +weerHuidig.wind.speed;
                 let voeltAls = '<h4>Voelt als</h4>' + weerHuidig.main.feels_like;
-
 
                 $('#icoon').append(icoontje);
                 $('#plaats').append(plaats);
                 $('#graden').append(graden);
                 $('#voeltAls').append(voeltAls);
                 $('#omschrijving').append(omschrijving);
-                $('#windsnelheid').append(windsnelheid);
+                //$('#windsnelheid').append(windsnelheid);
+
+                
                
             },
             error: function(){
